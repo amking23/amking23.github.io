@@ -122,7 +122,7 @@ p {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: white;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
@@ -130,11 +130,7 @@ p {
   .underline-animation:hover:before {
     visibility: visible;
     width: 100%;
-    background-color: black;
-  }
-
-  .active-nav-link {
-    color: black;
+    background-color: white;
   }
   .active-nav-link:after {
     content: "";
@@ -143,7 +139,7 @@ p {
     right: 0;
     width: 0;
     bottom: 0;
-    background: black;
+    background: white;
     height: 4px;
     left: 0;
     right: auto;
@@ -151,8 +147,29 @@ p {
   }
 }
 
+@media (max-width: 767px) {
+  .active-nav-link {
+    color: black;
+  }
+  .navlink h3:hover {
+    color: black;
+  }
+
+  /* .nav-item {
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+  }
+  .nav-item:hover {
+    background-color: #6b9dc7;
+  }
+
+  .active-nav-link {
+    background-color: #6b9dc7;
+  } */
+}
+
 .navbar {
-  padding: 0.8rem !important;
+  padding: 0.5rem 0.6rem !important;
 }
 
 .navlink {
@@ -165,7 +182,7 @@ p {
 }
 
 .navlink:hover {
-  color: black !important;
+  color: white !important;
 }
 
 .amk-logo {

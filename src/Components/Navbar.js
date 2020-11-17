@@ -45,6 +45,7 @@ export default () => {
 
   const handleClickLink = (id) => {
     isMobileMenu && toggleActive();
+    disableUnderlineWhileScrolling();
     scrollTo(id);
   };
 
@@ -74,7 +75,7 @@ export default () => {
 
   const scrollTo = (id) => {
     if (id) {
-      disableUnderlineWhileScrolling();
+      
       $("html, body").animate(
         {
           scrollTop: $(id).offset().top,

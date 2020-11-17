@@ -20,7 +20,7 @@ export default () => (
           className="d-flex flex-column justify-content-center"
         >
           <p className="text-left mb-0">
-            JavaScript, React, Ember, NodeJS, Express, Sequelize, Java,
+            JavaScript, React, NodeJS, Express, Sequelize, Ember, Java,
             SpringBoot, SQL, CSS, Bootstrap, Responsive Development, AWS,
             Firebase
           </p>
