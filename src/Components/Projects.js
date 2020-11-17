@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import ScrollTo from "./ScrollTo";
 import Link from "../Assets/Icons/Link";
 import GithubLarge from "../Assets/Icons/GithubLarge";
 
@@ -29,6 +28,7 @@ export default () => (
               <a
                 href="https://memesforhumans.herokuapp.com"
                 target="_blank"
+                rel="noopener"
                 className="header-link"
               >
                 memes against humanity
@@ -37,6 +37,7 @@ export default () => (
             <a
               href="https://memesforhumans.herokuapp.com"
               target="_blank"
+              rel="noopener"
               className="d-inline-block"
             >
               <div
