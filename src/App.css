@@ -1,0 +1,276 @@
+/* xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+
+.App {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: calc(10px + 0.5vw);
+}
+
+.blue-text {
+  color: #4682b4 !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.header-text,
+.header-text:hover {
+  font-size: calc(1.1rem + 0.9vw);
+}
+
+.sub-header-text {
+  font-size: calc(0.8rem + 0.9vw);
+}
+
+.blue {
+  background-color: #5d7f8a;
+}
+
+.green {
+  background-color: #74948a;
+}
+
+.grey {
+  background-color: #353330;
+}
+
+.lavender {
+  background-color: #8383a2;
+}
+
+.next-button {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 10px 0;
+  display: flex !important;
+  color: black !important;
+}
+
+.next-button:hover {
+  color: #4682b4 !important;
+}
+
+.scroll-to {
+  z-index: 1050;
+  margin-bottom: 53px;
+}
+
+.arrow-icon {
+  font-size: 48px;
+}
+
+@media (max-width: 992px) {
+  .arrow-icon {
+    font-size: 36px;
+  }
+}
+
+.hide-next-button {
+  display: flex !important;
+  cursor: default !important;
+}
+
+.hide-next-button .arrow-icon {
+  color: transparent;
+}
+
+/* NAVBAR */
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .underline-animation {
+    position: relative;
+  }
+
+  .underline-animation:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .underline-animation:hover:before {
+    visibility: visible;
+    width: 100%;
+    background-color: black;
+  }
+
+  .active-nav-link {
+    color: black;
+  }
+  .active-nav-link:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    background: black;
+    height: 4px;
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.navbar {
+  padding: 0.8rem !important;
+}
+
+.navlink {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+.navlink:hover {
+  color: black !important;
+}
+
+.amk-logo {
+  cursor: pointer;
+}
+
+/* FOOTER */
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
+.footer-divider {
+  background-color: black;
+  height: 6px;
+  border-radius: 10px;
+  margin: 4px 10px 0 10px;
+}
+
+.footer-icon {
+  width: 11vw;
+  max-width: 45px;
+  padding: 3px;
+  margin-top: 4px;
+  transition: margin 0.3s, fill 0.3s;
+}
+
+.footer-icon svg:hover {
+  fill: #4682b4;
+}
+
+.footer-icon:hover {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+/* ABOUT */
+
+/* RESUME */
+.large-left-border {
+  border-left: 1px solid black;
+}
+
+.large-right-border {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 767px) {
+  .large-left-border {
+    border-left: none;
+  }
+  .large-right-border {
+    border-right: none;
+  }
+}
+.sm-underline-parent {
+  position: relative;
+}
+
+.sm-underline {
+  display: inline;
+}
+
+.sm-underline:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+@media (min-width: 768px) {
+  .sm-underline:after {
+    height: 0px;
+  }
+}
+
+/* PROJECTS */
+.headline-icon svg:hover {
+  fill: #4682b4;
+}
+
+.headline-icon svg {
+  margin-top: -6px;
+}
+
+.header-link {
+  color: black;
+  text-decoration: none !important;
+}
+
+.header-link:hover {
+  color: #4682b4;
+}
+
+/* SKILLS */
+.logo {
+  width: 90px;
+  margin: 5px;
+}
+
+.logo-label {
+  font-size: 14px;
+}
