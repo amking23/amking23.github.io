@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     ReactGA.initialize("G-3237ERS5F1");
   }, []);
+  
   return (
     <div className="App">
       <Navbar />
