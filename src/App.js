@@ -10,7 +10,11 @@ import ReactGA from "react-ga";
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("G-3237ERS5F1");
+    ReactGA.initialize("G-3237ERS5F1", {
+      gaOptions: {
+        siteSpeedSampleRate: 100
+      }
+    });
   }, []);
   
   return (
