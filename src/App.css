@@ -14,6 +14,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
 }
 
 p {
@@ -214,6 +215,10 @@ p {
 
 .footer-icon svg:hover {
   fill: #4682b4;
+}
+
+.footer-icon svg:hover .instagram-circle {
+  stroke: #4682b4;
 }
 
 .footer-icon:hover {
