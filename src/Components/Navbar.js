@@ -75,7 +75,6 @@ export default () => {
 
   const scrollTo = (id) => {
     if (id) {
-      
       $("html, body").animate(
         {
           scrollTop: $(id).offset().top,
@@ -108,7 +107,7 @@ export default () => {
           className="amk-logo p-0"
           onClick={() => scrollTo("#about")}
         >
-          <img src={amk} style={{ width: "14vw", maxWidth: "55px" }} />
+          <img src={amk} style={{ width: "60px" }} />
         </NavbarBrand>
         <HamburgerCollapse
           isActive={menuActive}
@@ -122,7 +121,6 @@ export default () => {
           className="d-md-none hamburger"
           buttonColor="#FFBC67"
           barColor="white"
-          buttonWidth={36}
         />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

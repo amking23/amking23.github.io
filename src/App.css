@@ -1,4 +1,4 @@
-/* xs (for phones - screens less than 768px wide)
+/* xs (for phones - screens less than 576px wide)
 sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
@@ -120,7 +120,7 @@ p {
     content: "";
     position: absolute;
     width: 0;
-    height: 4px;
+    height: 5px;
     bottom: 0;
     left: 0;
     background-color: white;
@@ -133,7 +133,7 @@ p {
     width: 100%;
     background-color: white;
   }
-  .active-nav-link:after {
+  .active-nav-link h3:after {
     content: "";
     position: absolute;
     z-index: 0;
@@ -178,7 +178,7 @@ p {
   border: none !important;
   box-shadow: none !important;
   color: white !important;
-  padding: 6px !important;
+  padding: 5px !important;
 }
 
 .navlink:hover {
@@ -205,11 +205,16 @@ p {
 }
 
 .footer-icon {
-  width: 11vw;
-  max-width: 45px;
+  width: 45px;
   padding: 3px;
   margin-top: 4px;
   transition: margin 0.3s, fill 0.3s;
+}
+
+@media (max-width: 576px) {
+  .footer-icon {
+    width: 53px;
+  }
 }
 
 .footer-icon svg:hover {

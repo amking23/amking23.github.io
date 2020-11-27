@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta property="og:title" content="Anne Marie King" />
+    <meta
+      name="image"
+      property="og:image"
+      content="%PUBLIC_URL%/thumbnail.png"
+    />
+    <meta name="author" content="Anne Marie King" />
+    <meta
+      property="og:description"
+      content="Hi, I'm Anne Marie. Visit my website to learn more about my skills, experience, and some projects I've built."
+    />
+    <meta property="og:url" content="https://amking23.github.io" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,6 +27,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!-- <img src="%PUBLIC_URL%/thumbnail.png" alt="webthumb" className="webthumb" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -35,6 +44,7 @@
     -->
     <title>Anne Marie King</title>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
