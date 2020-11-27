@@ -45,7 +45,7 @@ p {
 
 .header-text,
 .header-text:hover {
-  font-size: calc(1.1rem + 0.9vw);
+  font-size: calc(1.6rem + 0.9vw);
 }
 
 .sub-header-text {
@@ -178,8 +178,7 @@ p {
   border: none !important;
   box-shadow: none !important;
   color: white !important;
-  padding-left: 7px !important;
-  padding-right: 7px !important;
+  padding: 6px !important;
 }
 
 .navlink:hover {
