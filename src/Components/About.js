@@ -31,8 +31,7 @@ export default () => (
           <p className="text-left text-md-center text-lg-right animate__animated animate__fadeIn mb-0">
             I'm a Software Engineer wtih experience in JavaScript,
             React, Responsive Design, Java, SpringBoot, and SQL. Based in
-            Chicago, Illinois and working as a Software Engineer for JPMorgan
-            Chase.
+            Chicago, Illinois and working as a Software Engineer for Clearstep.
           </p>
         </Col>
       </Row>
