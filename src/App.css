@@ -300,3 +300,18 @@ p {
 .logo-label {
   font-size: 14px;
 }
+
+/* HAMBURGER COLLAPSE */
+
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner {
+  background-color: white;
+}
+
+.hamburger--collapse {
+  display: flex;
+}

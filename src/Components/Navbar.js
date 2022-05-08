@@ -8,7 +8,7 @@ import {
   Button,
 } from "reactstrap";
 import { useMediaQuery } from "react-responsive";
-import { HamburgerCollapse } from "react-animated-burgers";
+import HamburgerCollapse from "./HamburgerCollapse";
 import amk from "../Assets/amk.png";
 import $ from "jquery";
 
@@ -34,6 +34,7 @@ export default () => {
   });
 
   const toggleActive = () => {
+    console.log("in toggleActive");
     setMenuActive(!menuActive);
     setIsOpen(!isOpen);
     menuDisplay === "d-none"
@@ -109,7 +110,8 @@ export default () => {
         >
           <img src={amk} style={{ width: "60px" }} />
         </NavbarBrand>
-        <HamburgerCollapse
+        <HamburgerCollapse isActive={menuActive} toggleButton={toggleActive} />
+        {/* <HamburgerCollapse
           isActive={menuActive}
           toggleButton={toggleActive}
           buttonStyle={{
@@ -121,7 +123,7 @@ export default () => {
           className="d-md-none hamburger"
           buttonColor="#FFBC67"
           barColor="white"
-        />
+        /> */}
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
