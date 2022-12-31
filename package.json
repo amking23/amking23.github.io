@@ -16,7 +16,7 @@
     "react-dom": "^18.1.0",
     "react-ga": "^3.2.1",
     "react-responsive": "^8.1.1",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "react-viewport-slider": "^1.0.0",
     "reactstrap": "^8.10.1",
     "styled-components": "^5.3.5"
